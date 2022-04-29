@@ -1,4 +1,4 @@
-import { print,input } from "./io_utils.js";
+import { print,input } from "../io_utils.js";
 
 function main(){
     var p1x1 = Number(input("Informe o p1x1: "))

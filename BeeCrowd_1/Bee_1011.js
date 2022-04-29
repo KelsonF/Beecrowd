@@ -1,4 +1,4 @@
-import { print,input } from "./io_utils.js";
+import { print,input } from "../io_utils.js";
 
 function main(){
     var R = Number(input("Digite o valor do raio: "))

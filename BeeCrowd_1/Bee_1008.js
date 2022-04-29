@@ -1,4 +1,4 @@
-import { print,input } from "./io_utils.js";
+import { print,input } from "../io_utils.js";
 
 function main(){
     var NUMBER = Number(input("Digite o numero do funcionario: "))
