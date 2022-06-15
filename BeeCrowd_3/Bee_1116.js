@@ -1,27 +1,28 @@
-import { input } from '../../io_utils.js'
+import { input } from '../io_utils.js'
 
 function main(){
-    let contador 
-    let numeros_de_pares = Number(input('Digite um valor: '))
-    let pares_de_numeros
-    let x,y
-    let quociente
+    let contador = 0;
+    let numeros_de_pares = Number(input("N: "));
+    let x,y;
+    let quociente;
     
-
-    while(numeros_de_pares > contador){
-        pares_de_numeros.split(" ")
-        x = pares_de_numeros[0]
-        y = pares_de_numeros[1]
+    //let i = 1
+    
+    while(contador < numeros_de_pares){
+        //[x,y] = lines[i++].split(" ").map(Number)
+        let numeros = input("Numeros: ").split("/").map(Number);
+        x = numeros[0];
+        y = numeros[1];
 
         contador++
 
         if(y === 0){
-            print("divisao impossivel")
+            console.log("divisao impossivel")
             continue
         }
 
         quociente = x/y
-        print(quociente.toFixed(2))
+        console.log(quociente.toFixed(1))
     }
 }
 main()
