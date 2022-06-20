@@ -1,21 +1,25 @@
 import { input,print } from '../io_utils.js'
 
 function main(){
-    const vetor_a = new Array(5)
+    let vetor = new Array(100)
 
-    for (let index = 0; index < vetor_a.length; index++) {
-        vetor_a[index] = Number(input("Numero: "))
+    for(let index = 0; index < vetor.length; index++) {
 
-        if(elementos_menores_que_10(vetor_a)){
-            console.log(`A[${index}] = ${vetor_a[index]}`)
-        }
-        
+        vetor[index] = Number(input("Numero: "))
+
     }
+
+    for (let item in vetor) {
+        if(menor_igual_a_10(vetor)){
+            console.log(`A[${item}] = ${vetor[item]}`)
+        }
+    }
+   
 }
 
-function elementos_menores_que_10(array){
-    for(let elemento of array){
-        if(elemento <= 10){
+function menor_igual_a_10(vetor){
+    for(let elemento in vetor){
+        if(elemento[vetor] <= 10){
             return true
         }
     }

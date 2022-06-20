@@ -1,15 +1,16 @@
 import { input } from '../io_utils.js'
 
 function main(){
-    const vetor = new Array(4)
-    // let i = 0
+    const vetor = new Array(10)
 
     for (let index = vetor.length - 1; index >= 0; index--) {
 
         vetor[index] = Number(input("Numero: "))
+    
+    }
 
-        console.log(`N[${index}] = ${vetor[index]}`)
-        // i++
+    for(let elemento in vetor){
+        console.log(`N[${elemento}] = ${vetor[elemento]}`)
     }
 
 }
